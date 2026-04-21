@@ -11,7 +11,7 @@ pipeline {
         stage('Push Image') {
             steps {
                 sh '''
-                docker login -u buildwithgaur -p YOUR_DOCKER_PASSWORD
+                docker login -u buildwithgaur -p Acchaji@100
                 docker push buildwithgaur/cicd-lab-app
                 '''
             }
